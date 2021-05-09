@@ -2,7 +2,7 @@
 - скачайте репозиторий на свой компьютер;
 - откройте ваш терминал и переместитесь в папку **Caesar-cipher-CLI**;
 - установите зависимости командой *npm i*;
-- установите модули, набирая и запуская поочередно следующие команды: npm install commander, npm install inherits, npm install readable-stream, npm install safe-buffer, npm install string_decoder, npm install through2, npm install util-deprecate;    
+- установите модули, набирая и запуская поочередно следующие команды: npm install commander, npm install through2;    
 - запустите в командной строке файл **my_caesar_cli.js** c нужными аргументами-опциями.  
 
 ```
