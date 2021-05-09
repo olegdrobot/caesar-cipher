@@ -16,26 +16,26 @@ node my_caesar_cli.js ...options
 
 ## Примеры:
 1. Кодирование (ввод в командной строке)
-node my_caesar_cli.js -k 3 -m "encode"
+node my_caesar_cli.js -s 3 -a "encode"
 вводимое заначение: abc
 результат: xyz
 2. Декодирование (ввод в командной строке)
-node my_caesar_cli.js -k 3 -m "decode"
+node my_caesar_cli.js -s 3 -a "decode"
 вводимое заначение: xyz
 результат: abc
 3. Если введен не верный ключ, например, вместо числа строка
-node my_caesar_cli.js -k "ghj" -m "encode",
-программа выведет сообщение об ошибке "error: enter number for option -k" 
+node my_caesar_cli.js -s "ghj" -a "encode",
+программа выведет сообщение об ошибке "error: enter number for option -s" 
 4. Ключ должен иметь положительное значение, если будет введен ключ с отрицательным значением, например
-node my_caesar_cli.js -k -3 -m "enccode", то программа выведет сообщение об ошибке "error: option -k must have a positive number"
+node my_caesar_cli.js -s -3 -a "enccode", то программа выведет сообщение об ошибке "error: option -s must have a positive number"
 5. Для чтения из файла используется аргмент -i (если не указан файл для записи результата, то результат будет отображен в командной строке)
-node my_caesar_cli.js -k 3 -m "encode" -i "./input.txt"
+node my_caesar_cli.js -s 3 -a "encode" -i "./input.txt"
 результат: Nkrru cuxrj!
 6. Если не указан аргумент с функцией 
-node my_caesar_cli.js -k 3 -i "./input.txt" (отсутствует аргумент -m), программа выведет сообщение об ошибке
+node my_caesar_cli.js -s 3 -i "./input.txt" (отсутствует аргумент -m), программа выведет сообщение об ошибке
 error: option -a must have meaning "encode" or "decode"
 7. Если путь к файлу указан не верно
-node my_caesar_cli.js -k 3 -m "encode" -i "./put.txt"
+node my_caesar_cli.js -s 3 -a "encode" -i "./put.txt"
 программа выведет сообщение об ошибке
 "Invalid file path or file doesn't exist"
 
