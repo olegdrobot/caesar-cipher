@@ -8,11 +8,11 @@ exports.validation = (action, key)=>{
 		}		
 	}
 	if(isNaN(parseInt(key))) {
-		process.stderr.write('error: enter number for option -k');
+		process.stderr.write('error: enter number for option -s');
 		exit();	
 	}
 	if(parseInt(key)<0){
-		process.stderr.write('error: option -k must have a positive number');
+		process.stderr.write('error: option -s must have a positive number');
 		exit();
 	}
 
